@@ -11,6 +11,7 @@ int main()
 {
     // Prints hello world
     cout << "Hello World\n";
+    cout << "Haynes Cromartie\n";
 
     return 0;
 }
