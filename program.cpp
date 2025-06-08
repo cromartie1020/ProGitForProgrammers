@@ -12,6 +12,7 @@ int main()
     // Prints hello world
     cout << "Hello World\n";
     cout << "Haynes Cromartie\n";
-    count << 'Version 12\n'
+    cout << 'Version 12\n';
+    cout << 'Version 14\n';
     return 0;
 }
