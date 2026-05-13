@@ -126,4 +126,7 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-#ACCOUNT_AUTH
+#email settings for allauth
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+    
