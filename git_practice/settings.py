@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+#from allauth.socialaccount.internal import jwtkit
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,9 +31,21 @@ INSTALLED_APPS = [
     'core',
     "allauth",
     "allauth.account",
-#    'allauth.socialaccount',
-#    'allauth.socialaccount.providers.google',
+    "allauth.socialaccount",
+    #"allauth.socialaccount.providers.google",
 ]
+'''
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': ['profile', 'email'],
+        'AUTH_PARAMS': {'access_type': 'online'},
+    'APP': {    
+    }
+    
+    }
+
+'''
+SITE_ID = 1
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -126,4 +139,7 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-#ACCOUNT_AUTH
+#email settings for allauth
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+    
