@@ -4,34 +4,61 @@
 {% block title %}
   <h1>Git Practice </h1>
 {% endblock %}
+{% block extra_head%}
+<style>
+  h3{
+    color: #0d6efd;
+  }
+
+</style>
+{% endblock extra_head %}
 {% block  body %}
 {% endblock %}
 {% block content %}
-  <h1>This is used for git practice.</h1>
 
-    <p>
-    <h3>Branch must be upto date.</h3>
-    <h2>git delete branch:  Safe Delete: git branch -d &ltbranch name&gt</h2>
-  </p>
-
-    <p>
-    <h3>Branch must be upto date.</h3>
-    <h2>git delete website branch: git push origin --delete &ltbranch name&gt</h2>
-  </p>
- </p>
-
-    <p>
-    <h3>To create a new branch.</h3>
-    <h2>Create branch: git branch &ltbranch name&gt</h2>
-  </p>
-
-   </p>
-
-    <p>
-    <h3>Switch Branch.</h3>
-    <h2>Switch: git push &lt git checkout &ltbranch name&gt</h2>
-  </p>
-
+     
+   
+   <div class="card ms-5" style="width: 70rem;">
+    <h1 class="card-title" style="text-align: center;">Git Practice</h1>
+    <ul class="list-group list-group-flush">
+     
+      <li class="list-group-item">
+        <h3>Branch must be upto date.</h3>
+        <h2>git delete branch:  Safe Delete: git branch -d &ltbranch name&gt</h2>
+      </li>
+     
+      <li class="list-group-item">  
+       <h3>Branch must be upto date.</h3>
+       <h2>git delete branch:  Safe Delete: git branch -d &ltbranch name&gt</h2>
+     </li>
+     
+     <li class="list-group-item">
+         <h3>Branch must be upto date.</>
+         <h2>git delete website branch: git push origin --delete &ltbranch name&gt</h2>
+     </li>
+     
+     <li class="list-group-item">
+         <h3>Branch must be upto date.</h3>
+         <h2>git delete website branch: git push origin --delete &ltbranch name&gt</h2>
+     </li>
+     
+     <li class="list-group-item">
+         <h3>Branch must be upto date.</h3>
+         <h2>git delete website branch: git push origin --delete &ltbranch name&gt</h2>
+     </li>
+     
+     <li class="list-group-item">
+         <h3> To create a new branch.</h3>
+         <h2>Create branch: git branch &ltbranch name&gt</h2>
+     </li>
+     
+     <li class="list-group-item">
+        <h3>Switch Branch.</h3>
+        <h2>Switch: git push &lt git checkout &ltbranch name&gt</h2>
+     </li>
+    </ul>
+  </div>
+  
 
 
 {% endblock %}
